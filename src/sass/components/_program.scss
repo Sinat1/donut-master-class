@@ -71,6 +71,7 @@
     text-align: left;
     gap: 8px;
 
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media (min-width: 1279px){
         font-size: 18px;
@@ -78,6 +79,11 @@
     }
     }
 
+
+     &__link:hover,
+     &__link:focus{
+     transform: scale( 1.2 , 1.2);
+}
     &__link-hidden{
         display: none;
         font-family: 'Montserrat' , sans-serif;
@@ -88,6 +94,8 @@
     text-align: left;
     gap: 8px;
 
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media (min-width: 1279px){
         display: block;
         font-size: 18px;
@@ -95,6 +103,10 @@
     }
     }
     
+    &__link-hidden:hover,
+     &__link:focus{
+     transform: scale( 1.2 , 1.2);
+}
     &__link:not(:last-child){
         margin-bottom: 8px;
 
@@ -156,19 +168,25 @@ justify-content: center;
 }
 
 
-
 &__item{
     display: flex;
     background: #FEF3E4;
 box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
 width: 130px;
 height: 130px;
 margin-bottom: 20px;
 margin-right: 20px;
+
 border-radius: 50%;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
+content: "";
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 
 @media (min-width:769px) and (max-width:1199px){
     display: flex;
@@ -185,7 +203,17 @@ justify-content: center;
 }
 
 
+
 }
+
+
+&__item:hover,
+&__item:focus{
+    transform: scale( 1.2 , 1.2);
+
+}
+
+
 
 &__item:nth-of-type(2){
     margin-top: 57px;
@@ -195,8 +223,6 @@ justify-content: center;
     margin-right: 0;}
 
 }
-
-
 
 &__item:nth-of-type(4){
     margin-top: 57px;
@@ -208,13 +234,17 @@ justify-content: center;
 }
 
 
+
+
 &__img{
     display: block;
+
     @media (min-width:1279px){
         height: 107px;
         width: 97px;
     }
 }
+
 
 &__title{
     font-family: 'Caveat Brush';
@@ -257,3 +287,4 @@ margin-bottom: 8px;
 
 }
 }
+
