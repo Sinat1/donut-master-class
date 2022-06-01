@@ -111,14 +111,14 @@ img {
 @media screen and (min-width: 1280px) {
   .top-common-background {
     width: 1280px;
-    background-image: url("../images/header-donuts-desktop-716.png"), url("../images/top-common-bg-desktop.png");
-    background-position: right top, center top;
-    background-size: 716px, 1280px;
+    background-image: url("../images/spoon-desktop-145.png"), url("../images/header-donuts-desktop-716.png"), url("../images/top-common-bg-desktop.png");
+    background-position: left 501px, right top, center top;
+    background-size: 145px, 716px, 1280px;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .top-common-background {
-    background-image: url("../images/header-donuts-desktop-1432.png"), url("../images/top-common-bg-desktop@2x.png");
+    background-image: url("../images/spoon-desktop-289.png"), url("../images/header-donuts-desktop-1432.png"), url("../images/top-common-bg-desktop@2x.png");
   }
 }
 
@@ -220,14 +220,10 @@ a {
     padding-right: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 1280px) {
   .header__container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__container {
-    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -314,6 +310,7 @@ a {
   right: 0;
   border: none;
   background-color: inherit;
+  color: #2e2520;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -521,14 +518,10 @@ a {
     padding-right: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 1280px) {
   .hero__container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__container {
-    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -565,7 +558,7 @@ a {
   font-family: Caveat brush;
   font-size: 24px;
   line-height: 1.25;
-  color: rgb(46, 37, 32);
+  color: #2e2520;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -591,14 +584,15 @@ a {
 @media screen and (min-width: 1280px) {
   .about-us__text {
     font-size: 18px;
+    line-height: 1.22;
   }
 }
 .about-us__button {
   background-color: transparent;
   border: none;
   padding: 0;
-  color: #AB816C;
-  font-family: caveat brush;
+  color: #ab816c;
+  font-family: Caveat brush;
   font-size: 18px;
   display: block;
 }
@@ -613,14 +607,11 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-us__wrapper {
     width: 336px;
-    padding-top: 10px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-us__wrapper {
     width: 392px;
-    padding-top: 10px;
-    margin-top: 20px;
   }
 }
 
@@ -906,248 +897,106 @@ a {
 .reviews {
   padding-bottom: 32px;
 }
-@media screen and (min-width: 320px) {
-  .reviews {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .reviews {
-    max-width: 769px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1280px) {
   .reviews {
-    max-width: 1280px;
+    width: 100%;
   }
 }
 
-.reviews-title {
+.reviews__title {
+  margin-bottom: 20px;
   font-family: "Caveat Brush";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
   color: #2e2520;
-  margin-left: 110px;
+  text-align: center;
+}
+
+.reviews__list {
+  margin-bottom: 32px;
+}
+
+.reviews__item {
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
-  .reviews-title {
-    margin-left: 350px;
+  .reviews__item.swiper-slide-active {
+    transform: scale(1) translate(0px, 40px);
+    transition: 0.8s;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .reviews-title {
-    margin-left: 600px;
-    font-size: 36px;
+  .reviews__item.swiper-slide-active {
+    transform: scale(1.1) translate(0px, 120px);
+    margin-bottom: 170px;
   }
 }
 
-.reviews-list {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .reviews-list {
-    position: relative;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list {
-    position: relative;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .reviews-list__item1 {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .reviews-list__item1 {
-    display: block;
-    position: absolute;
-    left: 30px;
-    top: 30px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list__item1 {
-    top: 136px;
-    left: 100px;
-    width: 285px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .reviews-list__item2 {
-    width: 336px;
-    position: absolute;
-    left: 200px;
-    top: 100px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list__item2 {
-    top: 279px;
-    left: 420px;
-    width: 394px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .reviews-list__item3 {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .reviews-list__item3 {
-    display: block;
-    position: absolute;
-    left: 550px;
-    top: 30px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list__item3 {
-    top: 136px;
-    left: 850px;
-    width: 288px;
-  }
-}
-
-.reviews-list__picture1 {
-  width: 151px;
-}
-@media screen and (min-width: 768px) {
-  .reviews-list__picture1 {
-    width: 151px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list__picture1 {
-    width: 285px;
-  }
-}
-
-.reviews-list__picture2 {
+.reviews__picture {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
   width: 280px;
 }
 @media screen and (min-width: 768px) {
-  .reviews-list__picture2 {
-    width: 336px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list__picture2 {
-    width: 394px;
-  }
-}
-
-.reviews-list__picture3 {
-  width: 152px;
-}
-@media screen and (min-width: 768px) {
-  .reviews-list__picture3 {
+  .reviews__picture {
     width: 152px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .reviews-list__picture3 {
-    width: 285px;
+  .reviews__picture {
+    width: 288px;
   }
 }
 
-.reviews-list__icon1 {
-  width: 136px;
-  height: 24px;
-  margin-top: 8px;
+@media screen and (min-width: 768px) {
+  .swiper-slide-active .reviews__picture {
+    width: 368px;
+  }
 }
-@media screen and (min-width: 1280px) {
-  .reviews-list__icon1 {
-    margin-left: 75px;
+@media screen and (min-width: 1200px) {
+  .swiper-slide-active .reviews__picture {
+    width: 394px;
   }
 }
 
-.reviews-list__icon2 {
+.reviews__icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
   width: 136px;
   height: 24px;
-  margin-left: 67px;
-  margin-top: 8px;
+}
+
+.reviews__name {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2e2520;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .reviews-list__icon2 {
-    margin-left: 100px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list__icon2 {
-    margin-left: 140px;
+  .reviews__name {
+    margin-bottom: 20px;
   }
 }
 
-.reviews-list__icon3 {
-  width: 136px;
-  height: 24px;
-  margin-left: 10px;
-  margin-top: 8px;
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list__icon3 {
-    margin-left: 75px;
-  }
-}
-
-.reviews-list-title1 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  color: #2e2520;
-  margin-top: 8px;
-  margin-left: 50px;
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list-title1 {
-    margin-left: 121px;
-  }
-}
-
-.reviews-list-title2 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  color: #2e2520;
-  margin-top: 8px;
-  margin-left: 120px;
-}
-@media screen and (min-width: 768px) {
-  .reviews-list-title2 {
-    margin-left: 150px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list-title2 {
-    margin-left: 191px;
-  }
-}
-
-.reviews-list-title3 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  color: #2e2520;
-  margin-top: 8px;
-  margin-left: 40px;
-}
-@media screen and (min-width: 1280px) {
-  .reviews-list-title3 {
-    margin-left: 105px;
-  }
-}
-
-.reviews-text {
+.reviews__text {
+  margin-right: auto;
+  margin-left: auto;
   width: 280px;
   font-style: normal;
   font-weight: 400;
@@ -1155,51 +1004,34 @@ a {
   line-height: 1.25;
   text-align: center;
   color: #2e2520;
-  margin-top: 8px;
-  margin-left: 0;
-  margin-bottom: 32px;
-  height: 220px;
 }
-@media screen and (min-width: 768px) {
-  .reviews-text {
-    margin-top: 550px;
-    line-height: 1.21;
-    width: 760px;
-    height: 120px;
-    padding-right: 70px;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews__text {
+    width: 160px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .reviews-text {
-    margin-top: 750px;
-    margin-left: 0;
-    font-size: 18px;
-    line-height: 1.21;
-    width: 1248px;
-    height: 88px;
-    padding-right: 180px;
-    padding-left: 180px;
+@media screen and (min-width: 768px) {
+  .reviews__text {
+    display: none;
   }
 }
 
-.reviews-number {
+@media screen and (min-width: 768px) {
+  .swiper-slide-active .reviews__text {
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+.swiper-pagination {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.214;
   text-align: center;
-  color: #ab816c;
-  margin-left: 130px;
-}
-@media screen and (min-width: 768px) {
-  .reviews-number {
-    margin-left: 350px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews-number {
-    margin-left: 620px;
-  }
+  color: #AB816C;
 }
 
 .registration-section {
@@ -1261,13 +1093,14 @@ a {
   .registration-for-phone {
     display: block;
     padding: 32px 6px;
-    max-width: 466px;
+    max-width: 320px;
     height: 100%;
     left: 30px;
     background: #fffff9;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0 0;
     justify-content: center;
+    margin: 0 auto;
   }
 }
 
@@ -1325,7 +1158,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .registration__confetti--desktop {
-    top: 50px;
+    top: 55px;
     left: 705px;
     transform: rotate(4.68deg);
     position: absolute;
