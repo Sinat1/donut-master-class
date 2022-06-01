@@ -193,18 +193,10 @@
 
   &__img {
     display: block;
-
-    transition: transform 0.8s;
-
     @media (min-width: 1279px) {
       height: 107px;
       width: 97px;
     }
-  }
-
-  &__item:hover &__img,
-  &__item:focus &__img {
-    transform: rotate(90deg);
   }
 
   &__title {
