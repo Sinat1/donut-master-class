@@ -1,0 +1,2 @@
+(()=>{document.querySelector(".registration-form__button");const e={registration:document.querySelector(".registration-form__button"),formName:document.querySelector("#form-name"),formPhone:document.querySelector("#form-phone"),formEmail:document.querySelector("#form-email")};e.registration.addEventListener("click",(function(){e.formName.value="",e.formPhone.value="",e.formEmail.value="",document.body.classList.toggle("modal-is-open")}))})();
+//# sourceMappingURL=index.43c378c4.js.map
